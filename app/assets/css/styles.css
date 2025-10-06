@@ -1,0 +1,103 @@
+/* Global Styles for Church Website */
+:root {
+  --brand: #1f4f82;
+  --brand-accent: #e2a20b;
+  --text: #223;
+  --muted: #667085;
+  --bg: #ffffff;
+  --bg-alt: #f6f8fb;
+  --border: #e4e7ec;
+  --maxw: 1100px;
+}
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--brand); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.container { max-width: var(--maxw); margin: 0 auto; padding: 0 16px; }
+
+/* Header */
+.header {
+  position: sticky; top: 0; z-index: 50;
+  background: rgba(255,255,255,0.8);
+  backdrop-filter: saturate(180%) blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+.header__inner { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 18px; color: var(--text); }
+.brand__logo { width: 40px; height: 40px; border-radius: 6px; object-fit: cover; }
+
+.nav { display: flex; align-items: center; gap: 18px; }
+.nav a { color: var(--text); font-weight: 600; }
+.nav a.active { color: var(--brand); }
+
+.mobile-toggle { display: none; background: none; border: none; padding: 8px; }
+
+@media (max-width: 800px) {
+  .nav { display: none; position: absolute; top: 60px; left: 0; right: 0; background: var(--bg); border-bottom: 1px solid var(--border); padding: 12px 16px; }
+  .nav.open { display: grid; gap: 10px; }
+  .mobile-toggle { display: inline-flex; }
+}
+
+/* Hero */
+.hero { background: var(--bg-alt); }
+.hero__inner { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 32px; padding: 48px 0; align-items: center; }
+.hero__title { font-size: clamp(28px, 4vw, 44px); line-height: 1.2; margin: 0 0 10px; }
+.hero__subtitle { font-size: clamp(16px, 2.1vw, 20px); color: var(--muted); margin: 0 0 22px; }
+.hero__cta { display: inline-block; background: var(--brand); color: white; padding: 12px 18px; border-radius: 10px; font-weight: 700; }
+.hero__cta.secondary { background: var(--brand-accent); color: #222; margin-left: 12px; }
+
+@media (max-width: 900px) {
+  .hero__inner { grid-template-columns: 1fr; }
+}
+
+/* Sections */
+.section { padding: 56px 0; }
+.section--alt { background: var(--bg-alt); }
+.section__title { font-size: 28px; margin: 0 0 10px; }
+.section__desc { color: var(--muted); margin-top: 0; }
+.grid { display: grid; gap: 22px; }
+.grid--3 { grid-template-columns: repeat(3, 1fr); }
+.grid--2 { grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 900px) {
+  .grid--3 { grid-template-columns: 1fr; }
+  .grid--2 { grid-template-columns: 1fr; }
+}
+.card { border: 1px solid var(--border); border-radius: 12px; padding: 18px; background: white; }
+.card h3 { margin-top: 0; }
+
+/* Footer */
+.footer { background: #0b1b2f; color: #dbe2ea; padding: 36px 0; }
+.footer a { color: #dbe2ea; }
+.footer__grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 24px; }
+.footer__brand { font-weight: 700; font-size: 18px; margin-bottom: 8px; }
+.footer__legal { border-top: 1px solid rgba(255,255,255,0.12); margin-top: 18px; padding-top: 12px; font-size: 14px; color: #b7c1cd; }
+@media (max-width: 900px) { .footer__grid { grid-template-columns: 1fr; } }
+
+/* Forms */
+.input, .select, .textarea { width: 100%; padding: 12px 14px; border: 1px solid var(--border); border-radius: 10px; font: inherit; }
+.label { font-weight: 600; margin-bottom: 6px; display: inline-block; }
+.button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: var(--brand); color: white; border: none; padding: 12px 18px; border-radius: 10px; font-weight: 700; cursor: pointer; }
+.button.secondary { background: var(--brand-accent); color: #222; }
+
+/* Utilities */
+.mt-0 { margin-top: 0; }
+.mt-1 { margin-top: 8px; }
+.mt-2 { margin-top: 16px; }
+.mt-3 { margin-top: 24px; }
+.mt-4 { margin-top: 32px; }
+.center { text-align: center; }
+
+/* Table-like list for sermons/events */
+.list { border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+.list__row { display: grid; grid-template-columns: 1.6fr 1fr 1fr; gap: 12px; padding: 12px 14px; border-top: 1px solid var(--border); }
+.list__row:first-child { border-top: none; background: var(--bg-alt); font-weight: 700; }
+@media (max-width: 800px) { .list__row { grid-template-columns: 1fr; } }
