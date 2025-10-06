@@ -1,105 +1,155 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
-  <title>Clear View Escapes</title>
-  <meta name="keywords" content="Travel planning, travel bundles, travel escapes,affordable travels!!">
-  <meta name="description" content="Your clarity. One trip away. We create soul restoring journeys that inspire you to be you.">
+  <title>Grace Community Church</title>
+  <meta name="description" content="A welcoming, gospel-centered church. Join us Sundays 9 & 11 AM.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/main.js" defer></script>
 </head>
 <body>
-  <header>
-    <img src="assets/images/icons/clear-view-escapes.svg">
-    <a href="#">Get in Touch</a>
-    <nav>
-      <ul>
-        <li><a href="#our-beginning">Our Beginning</a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
-      </ul>
-    </nav>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="Grace Community Church home">
+        <span>Grace Community Church</span>
+      </a>
+      <button id="mobileToggle" class="mobile-toggle" aria-label="Toggle navigation">Menu</button>
+      <nav id="primaryNav" class="nav" aria-label="Primary Navigation">
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="ministries.html">Ministries</a>
+        <a href="sermons.html">Sermons</a>
+        <a href="events.html">Events</a>
+        <a href="give.html">Give</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <div class="large-hero">
-    <img src="assets/images/hero--large.jpg">
-    <h1>Your clarity is amazing.</h1>
-    <h2>One trip away.</h2>
-    <p>We create soul restoring journeys that inspire you to be you.</p>
-    <p><a href="#">Get Started Today</a></p>
-  </div>
-
-  <div id="our-beginning">
-    <h2>The first trip we planned was our own.</h2>
-    <h3>Ever since, we&rsquo;ve been working to make travel better for everyone.</h3>
-    <img src="assets/images/first-trip.jpg" alt="Couple walking down a street.">
-    <img src="assets/images/our-start.jpg" alt="Our founder, Jane Doe">
-    <h2>Here&rsquo;s how we got started&hellip;</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <a href="#">quis nostrud exercitation</a> ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p>Duis aute irure dolor in <strong>reprehenderit in</strong> voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum velit esse cillum <strong>dolore eu fugiat.</strong></p>
-  </div>
-
-  <div id="features">
-    <img src="assets/images/icons/star.svg">
-    <h2>Our Features</h2>
-  
-    <img src="assets/images/icons/rain.svg">
-    <h3>We&rsquo;ll Watch the Weather</h3>
-    <p>Download our app and we&rsquo;ll send you a notice if it&rsquo;s about to rain in the next 20 minutes around your current location. A good rain can be refreshing, but sometimes you just want to stay dry.</p>
-
-    <img src="assets/images/icons/globe.svg">
-    <h3>Global Guides</h3>
-    <p>We&rsquo;ve scoured the entire planet for the best retreats and beautiful vistas. If there&rsquo;s a corner of the world you want to escape to we know the most scenic and inspiring locations.</p>
-
-    <img src="assets/images/icons/wifi.svg">
-    <h3>Wi-Fi Waypoints</h3>
-    <p>We only send you on trips to places we can personally vouch for as being amazing. Which means we&rsquo;ve mapped out where local wi-fi spots are and marked them in our app&rsquo;s map view.</p>
-
-    <img src="assets/images/icons/fire.svg">
-    <h3>Survival Kit</h3>
-    <p>Everytime you book an escape with us we send you a survival kit with the finest materials. The kit will allow you to setup a tent, start a fire, scratch your own back and lower your taxes.</p>
-  </div>
-
-  <div id="testimonials">
-    <img src="assets/images/icons/comment.svg">
-    <h2>Real Testimonials</h2>
-
-    <img src="assets/images/testimonial-jane.jpg">
-    <h3>Jane Doe</h3>
-    <h3>9 Time Escaper</h3>
-    <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&rdquo;</p>
-
-    <img src="assets/images/testimonial-john.jpg">
-    <h3>John Smith</h3>
-    <h3>4 Time Escaper</h3>
-    <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur.&rdquo;</p>
-
-    <img src="assets/images/testimonial-cat.jpg">
-    <h3>Cat McKitty</h3>
-    <h3>6 Time Escaper</h3>
-    <p>&ldquo;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.&rdquo;</p>
-  </div>
-
-  <footer>
-    <p>Copyright &copy; 2019 Clear View Escapes. All rights reserved. <a href="#">Get in Touch</a></p>
-  </footer>
-  <!-- Leave this commented out HTML here until you need it for an upcoming "modal" lesson
-  <div class="modal">
-    <div class="modal__inner">
-      <h2 class="section-title section-title--blue section-title--less-margin"><img src="assets/images/icons/mail.svg" class="section-title__icon"> Get in <strong>Touch</strong></h2>
-      <div class="wrapper wrapper--narrow">
-        <p class="modal__description">We will have an online order system in place soon. Until then, connect with us on any of the platforms below!</p>
+  <section class="hero">
+    <div class="container hero__inner">
+      <div>
+        <h1 class="hero__title">Welcome to Grace Community Church</h1>
+        <p class="hero__subtitle">Sundays 9:00 AM & 11:00 AM · 123 Main St, Your City</p>
+        <a class="hero__cta" href="contact.html">Plan a Visit</a>
+        <a class="hero__cta secondary" href="sermons.html">Watch Sermons</a>
       </div>
-
-      <div class="social-icons">
-        <a href="#" class="social-icons__icon"><img src="assets/images/icons/facebook.svg" alt="Facebook"></a>
-        <a href="#" class="social-icons__icon"><img src="assets/images/icons/twitter.svg" alt="Twitter"></a>
-        <a href="#" class="social-icons__icon"><img src="assets/images/icons/instagram.svg" alt="Instagram"></a>
-        <a href="#" class="social-icons__icon"><img src="assets/images/icons/youtube.svg" alt="YouTube"></a>
+      <div>
+        <img src="assets/images/hero--medium.jpg" alt="People gathering for worship">
       </div>
     </div>
-    <div class="modal__close">X</div>
-  </div>
-  This is the end of the "modal" reference HTML -->
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section__title">Gather With Us</h2>
+      <p class="section__desc">We are a gospel-centered community helping people find and follow Jesus.</p>
+      <div class="grid grid--3 mt-3">
+        <div class="card">
+          <h3>Sunday Services</h3>
+          <p class="mt-1">Join us at 9:00 AM or 11:00 AM for worship, teaching, and community.</p>
+        </div>
+        <div class="card">
+          <h3>Location</h3>
+          <p class="mt-1">123 Main Street, Your City. Plenty of parking. Kids check-in opens 15 minutes early.</p>
+        </div>
+        <div class="card">
+          <h3>Kids & Students</h3>
+          <p class="mt-1">Age-appropriate environments on Sundays and midweek groups for grades 6–12.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <h2 class="section__title">Latest Sermon</h2>
+      <p class="section__desc">Catch up on recent messages or share with a friend.</p>
+      <div class="card mt-3">
+        <h3 class="mt-0">Living by Faith</h3>
+        <p class="mt-1">Speaker: Pastor Alex · Series: Hebrews · Date: Sep 28, 2025</p>
+        <a class="button mt-2" href="sermons.html">View Sermons</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section__title">Upcoming Events</h2>
+      <div class="list mt-3">
+        <div class="list__row">
+          <div>Event</div>
+          <div>Date</div>
+          <div>Details</div>
+        </div>
+        <div class="list__row">
+          <div>Fall Festival</div>
+          <div>Oct 20, 2025</div>
+          <div><a href="events.html">Learn more</a></div>
+        </div>
+        <div class="list__row">
+          <div>Membership Class</div>
+          <div>Nov 2, 2025</div>
+          <div><a href="events.html">Learn more</a></div>
+        </div>
+        <div class="list__row">
+          <div>Student Retreat</div>
+          <div>Nov 15–17, 2025</div>
+          <div><a href="events.html">Learn more</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <h2 class="section__title">Ministries</h2>
+      <p class="section__desc">There’s a place for everyone to grow and serve.</p>
+      <div class="grid grid--3 mt-3">
+        <div class="card">
+          <h3>Kids</h3>
+          <p>Safe, joyful environments to learn about Jesus.</p>
+        </div>
+        <div class="card">
+          <h3>Groups</h3>
+          <p>Weeknight small groups throughout the city.</p>
+        </div>
+        <div class="card">
+          <h3>Care</h3>
+          <p>Prayer, counseling, and support when you need it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">Grace Community Church</div>
+          <div>123 Main St, Your City</div>
+          <div class="mt-1">Sundays 9:00 AM & 11:00 AM</div>
+        </div>
+        <div>
+          <div class="footer__brand">Links</div>
+          <div class="mt-1"><a href="about.html">About</a></div>
+          <div class="mt-1"><a href="ministries.html">Ministries</a></div>
+          <div class="mt-1"><a href="sermons.html">Sermons</a></div>
+          <div class="mt-1"><a href="events.html">Events</a></div>
+        </div>
+        <div>
+          <div class="footer__brand">Contact</div>
+          <div class="mt-1"><a href="mailto:hello@gracechurch.example">hello@gracechurch.example</a></div>
+          <div class="mt-1"><a href="contact.html">Contact Form</a></div>
+          <div class="mt-1"><a href="give.html">Give</a></div>
+        </div>
+      </div>
+      <div class="footer__legal">© <span id="year"></span> Grace Community Church</div>
+    </div>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear().toString();
+    </script>
+  </footer>
 </body>
 </html>

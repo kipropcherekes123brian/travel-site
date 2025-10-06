@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About · Grace Community Church</title>
+  <meta name="description" content="About Grace Community Church: beliefs, mission, leadership.">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html">Grace Community Church</a>
+      <button id="mobileToggle" class="mobile-toggle" aria-label="Toggle navigation">Menu</button>
+      <nav id="primaryNav" class="nav" aria-label="Primary Navigation">
+        <a href="index.html">Home</a>
+        <a class="active" href="about.html">About</a>
+        <a href="ministries.html">Ministries</a>
+        <a href="sermons.html">Sermons</a>
+        <a href="events.html">Events</a>
+        <a href="give.html">Give</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1 class="section__title">Who We Are</h1>
+        <p class="section__desc">We are a gospel-centered church seeking to make disciples of Jesus for the glory of God and the good of our city.</p>
+        <div class="grid grid--2 mt-3">
+          <div class="card">
+            <h3>Our Mission</h3>
+            <p>To help people find and follow Jesus by gathering, growing, and going together.</p>
+          </div>
+          <div class="card">
+            <h3>Our Beliefs</h3>
+            <p>We affirm the historic, orthodox Christian faith expressed in the Apostles’ Creed and Scripture.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <h2 class="section__title">Leadership</h2>
+        <div class="grid grid--3 mt-3">
+          <div class="card">
+            <h3>Pastor Alex</h3>
+            <p>Lead Pastor</p>
+          </div>
+          <div class="card">
+            <h3>Pastor Jamie</h3>
+            <p>Discipleship Pastor</p>
+          </div>
+          <div class="card">
+            <h3>Sara</h3>
+            <p>Kids Director</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">Grace Community Church</div>
+          <div>123 Main St, Your City</div>
+          <div class="mt-1">Sundays 9:00 AM & 11:00 AM</div>
+        </div>
+        <div>
+          <div class="footer__brand">Links</div>
+          <div class="mt-1"><a href="about.html">About</a></div>
+          <div class="mt-1"><a href="ministries.html">Ministries</a></div>
+          <div class="mt-1"><a href="sermons.html">Sermons</a></div>
+          <div class="mt-1"><a href="events.html">Events</a></div>
+        </div>
+        <div>
+          <div class="footer__brand">Contact</div>
+          <div class="mt-1"><a href="mailto:hello@gracechurch.example">hello@gracechurch.example</a></div>
+          <div class="mt-1"><a href="contact.html">Contact Form</a></div>
+          <div class="mt-1"><a href="give.html">Give</a></div>
+        </div>
+      </div>
+      <div class="footer__legal">© <span id="year"></span> Grace Community Church</div>
+    </div>
+    <script>document.getElementById('year').textContent = new Date().getFullYear().toString();</script>
+  </footer>
+</body>
+</html>
